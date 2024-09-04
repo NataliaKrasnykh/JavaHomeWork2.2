@@ -7,13 +7,10 @@ public class Main {
 
         if (payment > 1000) {
             bonus = payment / 100;
-
             balance = InitialBalance + payment + bonus;
-
             System.out.println("Начислено " + bonus + " рублей бонусов. Итоговый баланс " + balance + " руб.");
         } else {
             balance = InitialBalance + payment;
-
             System.out.println("Бонусы к начислению отсутствуют. Итоговый баланс " + balance + " руб.");
         }
     }
